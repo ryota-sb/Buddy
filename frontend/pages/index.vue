@@ -22,6 +22,7 @@ import { mapState } from 'vuex'
 
 export default {
   mounted() {
+    if (!this.loggedIn) return
     this.getOtherUser()
   },
   computed: {

@@ -28,9 +28,9 @@ export default {
   ],
   modules: [
     '@nuxtjs/dotenv',
+    '@nuxtjs/auth',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/auth',
     '@nuxtjs/proxy',
   ],
   auth:{
