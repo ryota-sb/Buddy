@@ -8,4 +8,6 @@ class Profile < ApplicationRecord
   validates :discord_id, presence: true
   validates :message, presence: true, length: { maximum: 144 }
   validates :nickname, presence: true
+
+  validates :user_id, uniqueness: true
 end
