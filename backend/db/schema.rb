@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_07_092455) do
+ActiveRecord::Schema.define(version: 2021_09_21_182124) do
 
   create_table "chat_room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2021_09_07_092455) do
     t.bigint "user_id"
     t.string "image"
     t.integer "gender", null: false
+    t.string "nickname", null: false
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
